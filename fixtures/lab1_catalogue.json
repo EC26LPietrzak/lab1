@@ -1,0 +1,136 @@
+[
+{
+  "model": "catalogue.productclass",
+  "pk": 1,
+  "fields": {
+    "name": "LAPTOPY",
+    "slug": "laptopy",
+    "requires_shipping": true,
+    "track_stock": true,
+    "options": []
+  }
+},
+{
+  "model": "catalogue.category",
+  "pk": 1,
+  "fields": {
+    "path": "0001",
+    "depth": 1,
+    "numchild": 0,
+    "name": "Laptopy",
+    "code": "",
+    "description": "<p>Laptopy do pracy, nauki i codziennego użytku.</p>",
+    "long_description": "",
+    "meta_title": null,
+    "meta_description": "",
+    "image": "categories/lenovo-thinkbook-16-g8-ial-intel-core-ultra-7-255h-16-wuxga-16gbgb-2tb-ssd-w11-p.jpg",
+    "slug": "laptopy",
+    "exclude_from_menu": false,
+    "is_public": true,
+    "ancestors_are_public": true
+  }
+},
+{
+  "model": "catalogue.product",
+  "pk": 2,
+  "fields": {
+    "structure": "standalone",
+    "is_public": true,
+    "upc": "LNV-TB-001",
+    "parent": null,
+    "title": "Lenovo ThinkBook",
+    "slug": "lenovo-thinkbook",
+    "description": "<p>Laptop Lenovo ThinkBook przeznaczony do pracy biurowej, nauki i codziennego użytkowania.</p>",
+    "meta_title": null,
+    "meta_description": "",
+    "priority": 0,
+    "product_class": 1,
+    "rating": null,
+    "date_created": "2026-10-18T16:11:43.193Z",
+    "date_updated": "2026-10-18T16:15:37.794Z",
+    "is_discountable": true,
+    "code": null,
+    "product_options": []
+  }
+},
+{
+  "model": "catalogue.product",
+  "pk": 3,
+  "fields": {
+    "structure": "standalone",
+    "is_public": true,
+    "upc": "LNV-TB-002",
+    "parent": null,
+    "title": "Lenovo ThinkBook 16",
+    "slug": "lenovo-thinkbook-16",
+    "description": "<p>Laptop Lenovo ThinkBook 16 z większym ekranem, przeznaczony do pracy biurowej i nauki.</p>",
+    "meta_title": null,
+    "meta_description": "",
+    "priority": 0,
+    "product_class": 1,
+    "rating": null,
+    "date_created": "2026-10-18T16:18:43.825Z",
+    "date_updated": "2026-10-18T16:18:48.692Z",
+    "is_discountable": true,
+    "code": null,
+    "product_options": []
+  }
+},
+{
+  "model": "catalogue.productcategory",
+  "pk": 1,
+  "fields": {
+    "product": 2,
+    "category": 1
+  }
+},
+{
+  "model": "catalogue.productcategory",
+  "pk": 2,
+  "fields": {
+    "product": 3,
+    "category": 1
+  }
+},
+{
+  "model": "partner.partner",
+  "pk": 1,
+  "fields": {
+    "code": "techshop",
+    "name": "TechShop",
+    "users": []
+  }
+},
+{
+  "model": "partner.stockrecord",
+  "pk": 1,
+  "fields": {
+    "product": 2,
+    "partner": 1,
+    "partner_sku": "TECH-LEN-001",
+    "price_currency": "PLN",
+    "price": "2999.00",
+    "num_in_stock": 10,
+    "num_allocated": 2,
+    "low_stock_threshold": 10,
+    "date_created": "2026-10-18T16:15:26.246Z",
+    "date_updated": "2026-10-18T16:15:26.246Z"
+  }
+},
+{
+  "model": "partner.stockrecord",
+  "pk": 2,
+  "fields": {
+    "product": 3,
+    "partner": 1,
+    "partner_sku": "TECH-LEN-002",
+    "price_currency": "PLN",
+    "price": "3299.00",
+    "num_in_stock": 5,
+    "num_allocated": 1,
+    "low_stock_threshold": 2,
+    "date_created": "2026-10-18T16:18:43.920Z",
+    "date_updated": "2026-10-18T16:18:43.920Z"
+  }
+}
+]
